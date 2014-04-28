@@ -1,0 +1,18 @@
+<Alloy>
+	<Window id="index" class="container" extendEdges="Ti.UI.EXTEND_EDGE_NONE" onOpen="init">
+		<ListView id="lvEntries" layout="vertical">
+    		<Templates>
+				<Require src="templates/img"></Require>
+    		</Templates>
+
+    		<ListSection id="section" dataCollection="entry">
+				<ListItem
+					template="img"
+					title:text="{title}"
+					subtitle:text="{subtitle}"
+					image:image="{image}"
+				/>
+    		</ListSection>
+    	</ListView>
+	</Window>
+</Alloy>

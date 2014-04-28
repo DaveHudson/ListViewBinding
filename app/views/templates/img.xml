@@ -1,0 +1,9 @@
+<Alloy>
+	<ItemTemplate name="img" backgroundColor="transparent" height="Ti.UI.SIZE">
+		<View class="contentItem" layout="vertical" height="Ti.UI.SIZE">
+			<Label bindId="title" top="20" />
+			<Label bindId="subtitle" />
+			<ImageView bindId="image" left="20" right="20"/>
+		</View>
+	</ItemTemplate>
+</Alloy>
