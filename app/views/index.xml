@@ -1,5 +1,5 @@
 <Alloy>
-	<Window id="index" class="container" extendEdges="Ti.UI.EXTEND_EDGE_NONE" onOpen="init">
+	<Window id="index" class="container" onOpen="init">
 		<ListView id="lvEntries" layout="vertical">
     		<Templates>
 				<Require src="templates/img"></Require>

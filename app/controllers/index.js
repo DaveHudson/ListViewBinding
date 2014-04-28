@@ -1,9 +1,8 @@
+// Init function called from onOpen in index.xml
 function init() {
-    // init pager function which we pass into API call
-    pager = new Pager();
+    pager = new Pager(); // init pager function which we pass into API call
 
-    // Fetch initial results
-    fetchResults();
+    fetchResults();  // Fetch initial results
 }
 
 // Function to track the page of data we are on
@@ -31,11 +30,9 @@ function fetchResults() {
             "page":pager.page()
         },
 
-        // Don't reset the collection, but add to it
-        add: true,
+        add: true,  // Don't reset the collection, but add to it (in theory to prevent setItems and use appendItems...?)
 
-        // Don't trigger an "add" event for every model, but just one "fetch"
-        silent: true,
+        silent: true,  // Don't trigger an "add" event for every model, but just one "fetch" (prevent multiple binding events)
 
         success : function(e) {
           //Ti.API.log(JSON.stringify(e));
